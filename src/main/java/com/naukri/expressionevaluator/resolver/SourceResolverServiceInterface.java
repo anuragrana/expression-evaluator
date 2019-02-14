@@ -1,9 +1,9 @@
-package com.ie.naukri.expressionevaluator.resolver;
+package com.naukri.expressionevaluator.resolver;
 
 import java.util.List;
 import java.util.Map;
 
-import com.ie.naukri.expressionevaluator.exceptions.ExpressionResolverException;
+import com.naukri.expressionevaluator.exceptions.ExpressionResolverException;
 import org.springframework.stereotype.Service;
 
 

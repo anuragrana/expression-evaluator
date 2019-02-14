@@ -1,6 +1,6 @@
-package com.ie.naukri.expressionevaluator.service;
+package com.naukri.expressionevaluator.service;
 
-import com.ie.naukri.expressionevaluator.resolver.SourceResolverServiceInterface;
+import com.naukri.expressionevaluator.resolver.SourceResolverServiceInterface;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;

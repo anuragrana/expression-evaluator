@@ -1,4 +1,4 @@
-package com.ie.naukri.expressionevaluator.service;
+package com.naukri.expressionevaluator.service;
 
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;

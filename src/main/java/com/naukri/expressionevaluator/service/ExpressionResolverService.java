@@ -1,7 +1,7 @@
-package com.ie.naukri.expressionevaluator.service;
+package com.naukri.expressionevaluator.service;
 
-import com.ie.naukri.expressionevaluator.exceptions.ExpressionResolverException;
-import com.ie.naukri.expressionevaluator.model.DataHolder;
+import com.naukri.expressionevaluator.exceptions.ExpressionResolverException;
+import com.naukri.expressionevaluator.model.DataHolder;
 import org.springframework.expression.Expression;
 import org.springframework.expression.ExpressionParser;
 import org.springframework.expression.spel.standard.SpelExpressionParser;
