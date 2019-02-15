@@ -36,8 +36,6 @@
 		<jackson.version>2.9.5</jackson.version>
 		<httpclient.version>4.5.2</httpclient.version>
 
-		<exception.framework.version>0.1.5</exception.framework.version>
-		<common.utils.version>0.1.3-rc2</common.utils.version>
 	</properties>
 
 	<dependencyManagement>
@@ -75,18 +73,6 @@
 			<version>${javax-inject.version}</version>
 			<scope>provided</scope>
 		</dependency>
-		<dependency>
-			<groupId>com.ie.naukri.msa.concerns</groupId>
-			<artifactId>exception-framework</artifactId>
-			<version>${exception.framework.version}</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.ie.naukri.utils</groupId>
-			<artifactId>common-utils</artifactId>
-			<version>${common.utils.version}</version>
-		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>

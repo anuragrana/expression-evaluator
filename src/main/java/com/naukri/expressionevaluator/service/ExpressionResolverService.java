@@ -17,40 +17,39 @@ import java.util.Map;
 @Service
 public class ExpressionResolverService {
 
-    private ExpressionParser parser = new SpelExpressionParser();
+	private ExpressionParser parser = new SpelExpressionParser();
 
+	/**
+	 * @param String
+	 * @param Map
+	 * @param String
+	 * @return boolean
+	 * @throws Exception
+	 */
+	public boolean resolveExpession(String expressions, Map<String, Object> dataFromService, String tenantId) {
+		Boolean result = false;
 
-    /**
-     * @param String
-     * @param Map
-     * @param String
-     * @return boolean
-     * @throws Exception
-     */
-    public boolean resolveExpession(String expressions, Map<String, Object> dataFromService, String tenantId) {
-        Boolean result = false;
+		DataHolder dataHolder = new DataHolder();
+		dataHolder.setData(dataFromService);
+		try {
+			Expression expression = parser.parseExpression(expressions);
+			result = expression.getValue(dataHolder, Boolean.class);
+		} catch (Exception e) {
+			throw new ExpressionResolverException("Error Parsing Expression", e);
+		}
+		return result;
+	}
 
-        DataHolder dataHolder = new DataHolder();
-        dataHolder.setData(dataFromService);
-        Expression expression = parser.parseExpression(expressions);
-        try {
-            result = expression.getValue(dataHolder, Boolean.class);
-        } catch (Exception e) {
-            throw new ExpressionResolverException("Error Parsing Expression", e);
-        }
-        return result;
-    }
-
-    /**
-     * @param String
-     * @return boolean
-     */
-    public boolean validate(String expression) {
-        try {
-            parser.parseExpression(expression);
-        } catch (Exception ex) {
-            return false;
-        }
-        return true;
-    }
+	/**
+	 * @param String
+	 * @return boolean
+	 */
+	public boolean validate(String expression) {
+		try {
+			parser.parseExpression(expression);
+		} catch (Exception ex) {
+			return false;
+		}
+		return true;
+	}
 }

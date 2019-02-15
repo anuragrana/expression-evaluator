@@ -1,15 +1,16 @@
-package com.ie.naukri.expressionevaluator;
+package com.naukri.expressionevaluator;
 
-import com.ie.naukri.expressionevaluator.resolver.SourceResolverServiceInterface;
-import com.ie.naukri.expressionevaluator.service.ExpressionEvaluatorService;
-import com.ie.naukri.expressionevaluator.service.ExpressionResolverService;
-import com.ie.naukri.expressionevaluator.service.ExpressionTokenizerService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.runners.MockitoJUnitRunner;
+
+import com.naukri.expressionevaluator.resolver.SourceResolverServiceInterface;
+import com.naukri.expressionevaluator.service.ExpressionEvaluatorService;
+import com.naukri.expressionevaluator.service.ExpressionResolverService;
+import com.naukri.expressionevaluator.service.ExpressionTokenizerService;
 
 import java.util.Arrays;
 import java.util.HashMap;
