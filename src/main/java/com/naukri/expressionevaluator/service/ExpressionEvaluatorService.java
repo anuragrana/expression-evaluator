@@ -30,11 +30,10 @@ public class ExpressionEvaluatorService {
     /**
      * Tokenize and resolve the expression
      *
-     * @param String the expression to resolve
-     * @param String the tenant id
-     * @param String
-     * @return boolean
-     * @throws Exception
+     * @param expression the expression to resolve
+     * @param tenantId the tenant id
+     * @param dataToRelay the data that should be relayed to resolver
+     * @return boolean output of evaluation
      */
     public boolean evaluateExpression(String expression, String tenantId, Map<String, String> dataToRelay) {
         Map<Object, List<String>> parsedExpression = expressionTokenizer.tokenizeAndCacheExpression(expression);
@@ -46,8 +45,8 @@ public class ExpressionEvaluatorService {
 
     /**
      * Checks if the expression is as per the format supported by the engine
-     * @param expression
-     * @return
+     * @param expression the rule expression
+     * @return boolean output of validation
      */
     public boolean validateExpression(String expression) {
         return expressionResolver.validate(expression);

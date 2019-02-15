@@ -34,7 +34,7 @@ public class ExpressionTokenizerService {
     }
 
     /**
-     * @param String
+     * @param expressionToTokenize the rule expression
      * @return Map of attributes
      */
     public Map<Object, List<String>> tokenize(String expressionToTokenize) {
@@ -66,19 +66,4 @@ public class ExpressionTokenizerService {
         }
         return serviceTokens;
     }
-
-    /**
-     * @param Map
-     * @return JSONObject
-     */
-    public JSONObject parseToJson(Map<String, String> stringFormatted) {
-        JSONObject json = null;
-        try {
-            json = (JSONObject) new JSONParser().parse(JSONObject.toJSONString(stringFormatted));
-        } catch (ParseException e) {
-            logger.error(e.getMessage());
-        }
-        return json;
-    }
-
 }

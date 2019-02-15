@@ -19,13 +19,7 @@ public class ExpressionResolverService {
 
 	private ExpressionParser parser = new SpelExpressionParser();
 
-	/**
-	 * @param String
-	 * @param Map
-	 * @param String
-	 * @return boolean
-	 * @throws Exception
-	 */
+
 	public boolean resolveExpession(String expressions, Map<String, Object> dataFromService, String tenantId) {
 		Boolean result = false;
 
@@ -40,10 +34,6 @@ public class ExpressionResolverService {
 		return result;
 	}
 
-	/**
-	 * @param String
-	 * @return boolean
-	 */
 	public boolean validate(String expression) {
 		try {
 			parser.parseExpression(expression);
