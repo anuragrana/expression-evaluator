@@ -6,7 +6,7 @@
 
 	<groupId>com.naukri</groupId>
 	<artifactId>expression-evaluator</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 
 	<name>expression-evaluator</name>
 	<description>An expression parser</description>
