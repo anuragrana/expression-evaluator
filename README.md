@@ -16,9 +16,9 @@ Integration Steps:
 1. Add the following dependency in project's pom.xml,
 
 		<dependency>
-	   		<groupId>com.ie.naukri.msa.concerns</groupId>
+	   		<groupId>com.naukri</groupId>
 	    		<artifactId>expression-evaluator</artifactId>
-	    		<version>%version_number%</version>
+	    		<version>1.0.0</version>
 	    		<type>pom</type>
 		 </dependency>
 
