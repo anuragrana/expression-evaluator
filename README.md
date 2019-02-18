@@ -36,9 +36,9 @@ Integration:
 
 3. Validate Expression: It is quite possible that you need to define the expression at one place/application and evaluate it at the other. In such cases, you can validate the expression beforehand to check for syntax errors or non supported format errors. Sample code to validate the expression:
 	
-	public boolean validateExpression(String expressionRule) {
+		public boolean validateExpression(String expressionRule) {
 			return 	expressionEvaluatorService.validateExpression(expressionRule);
-	}
+		}
 		
 4. Evaluate Expression: Expression evaluator works in steps like Resolve and Evaluate the expression. Main objective of the expression evaluator is to resolve the expression at run time ,but along with it the value of the fields that we need to compare with the expression can be fetched at run time.
 
