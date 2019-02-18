@@ -11,7 +11,7 @@ Features:
  
 Pre-requisites: Jdk 8, Spring core dependencies
 
-Integration:
+Integration Steps:
 
 1. Add the following dependency in project's pom.xml,
 
@@ -48,8 +48,8 @@ Integration:
    
 Argument 
    
-    Map<Object, List<String>> :Json formatted fields and their attributes whose values need to be fetched at run time. 
-    Map<String, String>	:key identifier 
+    Map<Object, List<String>>: Json formatted fields and their attributes whose values need to be fetched at run time. 
+    Map<String, String>: key identifier 
     The key identifier will be like customerNo:1221233 whose attribute like PINCODE,CITY of field ADDRESS need to be fetched.
 	
 Input format of the attributes in resolveExpressionValueFromService :
@@ -76,9 +76,9 @@ Sample code to evaluate the expression:
 4.2. Invoke evaluator: Use the evaluateExpression method of Expression Evaluator Service to evaluate the expression.
 Arguments
 
-    String : expression that need to be evaulated.
-    String : Parameter to differentiate the Source like appId in case of REST.
-    Map<String, String> : unique identifier whose attributes values need to evaulate.
+    String: expression that need to be evaulated.
+    String: Parameter to differentiate the Source like appId in case of REST.
+    Map<String, String>: unique identifier whose attributes values need to evaulate.
 	The unique identifier will be like customerNo:1221233 
 	
 Sample of implementation to get the value that are needed to resolve:
