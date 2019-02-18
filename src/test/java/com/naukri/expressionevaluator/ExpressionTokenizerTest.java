@@ -1,15 +1,16 @@
-package com.ie.naukri.expressionevaluator;
+package com.naukri.expressionevaluator;
 
 import static org.junit.Assert.assertNotNull;
 
 import java.util.List;
 import java.util.Map;
 
-import com.ie.naukri.expressionevaluator.service.ExpressionTokenizerService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.runners.MockitoJUnitRunner;
+
+import com.naukri.expressionevaluator.service.ExpressionTokenizerService;
 
 @RunWith(MockitoJUnitRunner.class)
 public class ExpressionTokenizerTest {

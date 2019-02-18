@@ -1,4 +1,4 @@
-package com.ie.naukri.expressionevaluator.exceptions;
+package com.naukri.expressionevaluator.exceptions;
 
 /**
  * Created by minni on 3/1/19.

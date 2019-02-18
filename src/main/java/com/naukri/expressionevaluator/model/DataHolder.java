@@ -1,4 +1,4 @@
-package com.ie.naukri.expressionevaluator.model;
+package com.naukri.expressionevaluator.model;
 
 import java.util.HashMap;
 import java.util.Map;
