@@ -9,9 +9,7 @@ Features:
 4. Supports defining rules around request and system properties.
 
  
-Pre-requisites:
-	Jdk 8
-	Spring core dependencies
+Pre-requisites: Jdk 8, Spring core dependencies
 
 Integration:
 
@@ -27,9 +25,13 @@ Integration:
 2. Define Expression: Define an expression string that represents the rules to run against the input data. Format of the expression should be correct and error free. There is a specific format in which the expressions should be written. Sample expressions below,
 
     Rules format (case insensitive):
+    
 	data['profile']['location'] == '65'
+	
 	data['profile']['location'] == '65' and data['profile']['role'] != '8' and data['request']['useragent'] == 'android'
+	
 	data['profile']['location'] == '65' and data['system']['day'] == 'tuesday'
+	
 	(data['profile']['location'] == '65' or data['profile']['role'] == '6')
 
 3. Validate Expression: It is quite possible that you need to define the expression at one place/application and evaluate it at the other. In such cases, you can validate the expression beforehand to check for syntax errors or non supported format errors. Sample code to validate the expression:
