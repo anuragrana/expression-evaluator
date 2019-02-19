@@ -84,7 +84,7 @@ Arguments
 Sample of implementation to get the value that are needed to resolve:
 
 	@Override
-	public Map<String, Object> resolveExpressionValueFromService(Map<Object,List<String>> jsonFormattedServiceInput,Map<String, String> dataToRelay)hrows ExpressionResolverException {
+	public Map<String, Object> resolveExpressionValueFromService(Map<Object,List<String>> jsonFormattedServiceInput,Map<String, String> dataToRelay) throws ExpressionResolverException {
 		HashMap<String, Object> SpelAcceptedData = null;
 		try {
 	    	HashMap<Object, Object> data = callRestApiToGetData(requestBody,dataToRelayKey);
